@@ -97,3 +97,16 @@ Andrew will focus on developing the front-end using Angular and potentially othe
 ##### Pavan
 
 Pavan will focus on complex SQL query design with multiple joins, subqueries, aggregation etc., and also contribute to developing the front-end using Angular. Pavan or Andrew are new to AWS and should be able to help us get the $100 credits available to students.
+
+_____________________
+
+# Milestone 3
+
+### Populate the database
+
+Now that you have a baseline schema to work on, the next part is to populate the database with the datasets you have chosen. You should clean and format data from your main and complementary sources, as needed, and perform entity resolution. 
+
+For each of your __*6-10 questions (from Milestone 1) provide its translation to an SQL query*__.   (If you needed to change any of your original questions, provide the new questions in English and explain why you needed to change or replace them.)
+
+You should use the __AWS Getting Started__ handout (Canvas/Files/Project/RDS_HowToConnect.pdf) to create your own __MySQL__ (cheaper!) or __Oracle database__ on __Amazon RDS__. For this milestone you should submit a text file with a full JDBC/SQLPLUS connect string, including guest user ID and password and database schema name, to us via Canvas. (From this we should be able to dump your SQL tables.) 
+
