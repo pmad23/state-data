@@ -34,8 +34,16 @@ app.get('/test', function(request, response) {
   response.send('I am a test page, behold my might and glory!')
 })
 
-app.get('/test2', function(request, response) {
-        response.sendFile(path.join(__dirname, '/', 'test2.html'));
+app.get('/costofliving', function(request, response) {
+        response.sendFile(path.join(__dirname, '/', 'cost_of_living.html'));
+})
+
+app.get('/COL_script.js', function(request, response) {
+        response.sendFile(path.join(__dirname, '/', 'COL_script.js'));
+})
+
+app.get('/styles.css', function(request, response) {
+        response.sendFile(path.join(__dirname, '/', 'styles.css'));
 })
 
 /*
