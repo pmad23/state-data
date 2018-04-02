@@ -9,15 +9,15 @@ Joseph Haymaker (josepma@seas.upenn.edu),
 
 __Project idea__: A web app that allows users to compare livability of different states based on different factors such as: traffic, gun violence, educational finances, etc.
 
-Questions a user may ask:
-1. What are the cost of living differences between 2 states?
+__Questions a user may ask:__
+_1. What are the cost of living differences between 2 states?
 1. What are the top 10 best states to live in?
 1. What are the worst states to live in?
 1. How dangerous is one state versus another?
 1. Between two states, which one will probably assure better primary/secondary education?
 1. Which states are better for retirees?
 1. What are the best states to start a small business in?
-1. What are the least healthy states?
+1. What are the least healthy states?_
 
 
 __State Data - mortality, gun violence, income, socioeconomic factors, etc.__
@@ -55,12 +55,12 @@ Through public data portals, we found data on crime by state and metropolitan ar
 
 ##### Relational Schema
 
-FBI Crime Data: (State, Area, Population, Violent crime, Murder and nonnegligent manslaughter, Rape (revised definition2), Rape (legacy definition3), Robbery, Aggravated assault, Property crime, Burglary, Larceny-theft, Motor vehicle theft)
+__FBI Crime Data__: (_**State**_, _**Area**_, Population, Violent crime, Murder and nonnegligent manslaughter, Rape (revised definition2), Rape (legacy definition3), Robbery, Aggravated assault, Property crime, Burglary, Larceny-theft, Motor vehicle theft)
 
-Metropolitan Crime Data: (Metropolitan Statistical Area, Population	, Violent crime, Murder and
+__Metropolitan Crime Data__: (_**Metropolitan Statistical Area**_, Population	, Violent crime, Murder and
 Nonnegligent manslaughter, Rape, Robbery, Aggravated assault, Property crime,	Burglary, Larceny-theft, Motor vehicle theft)
 
-Behavioral Risk Factors: (Year, LocationAbbr, LocationDesc, Category, Topic Question, Data_Value_Unit, Data_Value_Type,	Data_Value, Data_Value_Footnote_Symbol, Data_Value_Footnote, Data_Value_Std_Err, Low_Confidence_Limit, High_Confidence_Limit, Sample_Size, Break_Out, Break_Out_Category, GeoLocation, CategoryId, TopicId, QuestionId	LocationId, BreakOutId, BreakOutCategoryid)
+__Behavioral Risk Factors__: (_**Year**_, _**LocationAbbr**_, _**LocationDesc**_, Category, Topic Question, Data_Value_Unit, Data_Value_Type,	Data_Value, Data_Value_Footnote_Symbol, Data_Value_Footnote, Data_Value_Std_Err, Low_Confidence_Limit, High_Confidence_Limit, Sample_Size, _**Break\_Out**_ , _**Break\_Out\_Category**_, GeoLocation, CategoryId, TopicId, QuestionId	LocationId, BreakOutId, BreakOutCategoryid)
 
 ##### NoSQL Component
 
