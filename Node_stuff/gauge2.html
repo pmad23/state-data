@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="stylesheet" href="styles.css">
+	<!--- dependency for gauge if not downloaded locally --->
+	<script src="https://cdn.rawgit.com/recogizer/gauge-chart/4a7d7f58/dist/bundle.js">
+	<!--- not sure if needed but here anyway --->
+    	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<!--- links to controller; all logic for gauge --->
+	<script src="/controller.js"></script>
+  </head>
+
+<h1> Temperature readings from Arduino</h1>
+<h3> Group 22 </h3>
+
+<body ng-app="myApp"> 
+  <div ng-app="myApp" ng-controller="RadialGaugeCtrl"> 
+  <!---values from controller.js file --->
+    <div width="300" ng-radial-gauge ranges="ranges" value="value" value-unit="unit" precision="precision" lower-limit="lowerLimit" upper-limit="upperLimit">
+    <!--- change C to F buttons --->
+    <button type="button">Celsius</button><button type="button">Fahrenheit</button>
+</html>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/script.js"></script>
+    <script>
+      function myFunction() {
+      var input, filter, table, tr, td, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("bike-table");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+     }
+     </script> 
+  </head>
+<body ng-app="NYCBikes">
+  <div ng-app="NYCBikes" ng-controller="bikeController">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for stations..">
+    <table id="bike-table">
+      <thead>
+       <tr class="header">
+         <th style="width: 20%;">Station Name</th>
+         <th>Available Docks</th>
+         <th>Total Docks</th>
+         <th>Available Bikes</th>
+         <th>Status Value</th>
+         <th>Last Communication Time</th>
+       </tr>
+       </thead> 
+      <tbody> 	
+        <tr ng-repeat="x in data">
+          <td>{{ x.stationName }}</td>
+          <td>{{ x.availableDocks }}</td>
+          <td>{{ x.totalDocks }}</td>
+          <td>{{ x.availableBikes }}</td>
+          <td>{{ x.statusValue }}</td>
+          <td>{{ x.lastCommunicationTime }}</td>
+        </tr>
+      </tbody>
+     </table>
+   </div>
+  </body>
+</html>

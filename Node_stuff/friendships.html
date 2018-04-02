@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="/connection.js"></script>
+
+  <body ng-app="Friends">
+   <div ng-app="Friends" ng-controller="friendsController">
+     <div id="contact">
+      <h1>Enter a query</h1>
+      <form action="/myaction" method="post">
+        <fieldset>
+            <label for="name">Query:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your query here" />
+            <input type="submit" value="Send query" />
+        </fieldset>
+     </form>
+    </div>
+    <table id="friends-table">
+      <thead>
+       <tr class="header">
+         <th style="width: 50%;">Name</th>
+         <th style="width: 50%;">No. of friends</th>
+       </tr>
+       </thead>
+      <tbody>
+        <tr ng-repeat="x in friends">
+          <td>{{ x.name }}</td>
+          <td>{{ x.count }}</td>
+        </tr>
+      </tbody>
+     </table>
+   </div>
+  </body>
+</html>
+
